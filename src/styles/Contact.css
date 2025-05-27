@@ -9,10 +9,91 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-form-container {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
+  padding: 30px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00ffff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #00ffff;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #00ffff;
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  background: #00ffff;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #00cccc;
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.success-message {
+  color: #00ff00;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #ff4444;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .contact-info {
@@ -20,7 +101,7 @@
 }
 
 .contact-info h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #00ffff;
 }
@@ -63,11 +144,18 @@
 
 @media (max-width: 768px) {
   .contact-container {
+    grid-template-columns: 1fr;
     padding: 20px;
   }
 
-  .contact-info h2 {
-    font-size: 2rem;
+  .contact-form-container,
+  .contact-info {
+    padding: 20px;
+  }
+
+  .contact-info h2,
+  .contact-form-container h2 {
+    font-size: 1.8rem;
   }
 
   .contact-details {

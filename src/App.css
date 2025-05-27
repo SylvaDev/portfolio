@@ -6,12 +6,14 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Example gradient background */
+  background: linear-gradient(to right, rgb(0, 0, 0), #66b0c7); 
+  /*background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);  Example gradient background */
   /* You can replace the above with any background you prefer, such as:
      background-color: #f0f0f0;  (solid color)
      background-image: url('path-to-your-image.jpg');  (image)
      background: linear-gradient(to right, #ff0000, #00ff00);  (different gradient)
   */
+  color: white;
 }
 
 .App {
@@ -101,7 +103,7 @@ body {
 }
 
 .navigation button:hover {
-  color: #007bff;
+  color: #8c00ff;
 }
 
 @media (max-width: 768px) {
@@ -146,7 +148,7 @@ section:not(:last-child) {
 }
 
 .footer {
-  background-color: rgb(114, 153, 179);
+  background-color: rgba(114, 153, 179, 0.9);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -180,12 +182,12 @@ section:not(:last-child) {
 .home-left h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: white;
 }
 
 .home-left h2 {
   font-size: 1.5rem;
-  color: #666;
+  color: #e0e0e0;
   margin-bottom: 2rem;
 }
 
@@ -196,7 +198,7 @@ section:not(:last-child) {
 .home-content p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  color: #444;
+  color: #e0e0e0;
 }
 
 .home-buttons {
@@ -244,7 +246,7 @@ section:not(:last-child) {
 
 .media-placeholder {
   text-align: center;
-  color: #666;
+  color: #e0e0e0;
   padding: 2rem;
 }
 
@@ -259,7 +261,7 @@ section:not(:last-child) {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: white;
 }
 
 .about-container {
@@ -276,13 +278,13 @@ section:not(:last-child) {
 }
 
 .about-left h2 {
-  color: #333;
+  color: white;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
 
 .about-content p {
-  color: #666;
+  color: #e0e0e0;
   line-height: 1.8;
   font-size: 1.1rem;
 }
@@ -299,7 +301,7 @@ section:not(:last-child) {
 
 .skills-container h2 {
   text-align: center;
-  color: #333;
+  color: white;
   margin-bottom: 2rem;
   font-size: 1.8rem;
 }
@@ -319,17 +321,17 @@ section:not(:last-child) {
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .skill-card h3 {
-  color: #333;
+  color: white;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
 
 .skill-card p {
-  color: #666;
+  color: #e0e0e0;
   font-size: 0.9rem;
   line-height: 1.5;
 }

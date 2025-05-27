@@ -101,17 +101,29 @@ function Contact() {
           <h2>Get in Touch</h2>
           <p>Feel free to reach out for opportunities or collaborations.</p>
           <div className="contact-details">
-            <div className="contact-item">
+            {/* <div className="contact-item">
               <h3>Email</h3>
               <p>irvingcsylva@gmail.com</p>
-            </div>
+            </div> */}
             <div className="contact-item">
               <h3>Location</h3>
-              <p>Your Location</p>
+              <p>California, USA</p>
             </div>
             <div className="contact-item">
               <h3>Social</h3>
-              <p>LinkedIn | GitHub | Twitter</p>
+              <div className="social-links">
+                <a href="https://linkedin.com/in/irvingsylva" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+                <span className="separator">|</span>
+                <a href="https://github.com/SylvaDev" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+                <span className="separator">|</span>
+                <a href="https://x.com/IrvingSylva" target="_blank" rel="noopener noreferrer">
+                  Twitter
+                </a>
+              </div>
             </div>
           </div>
         </div>

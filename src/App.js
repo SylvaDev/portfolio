@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Achievements from './pages/Achievements';
 import Contact from './pages/Contact';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Contact />
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

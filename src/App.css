@@ -179,16 +179,20 @@ section:not(:last-child) {
   padding-right: 2rem;
 }
 
-.home-left h1 {
+.home-left h1,
+.section-title {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: white;
+  color: #00e5ff;  /* Bright cyan color */
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);  /* Subtle glow effect */
 }
 
-.home-left h2 {
-  font-size: 1.5rem;
-  color: #e0e0e0;
-  margin-bottom: 2rem;
+.home-left h2,
+.about-left h2,
+.skills-container h2 {
+  font-size: 1.8rem;
+  color: #4de6ff;  /* Slightly softer cyan for subheadings */
+  margin-bottom: 1.5rem;
 }
 
 .home-content {
@@ -255,13 +259,6 @@ section:not(:last-child) {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: white;
 }
 
 .about-container {

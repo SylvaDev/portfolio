@@ -1,4 +1,5 @@
 import React from 'react';
+import CodeShowcase from '../components/CodeShowcase';
 
 function Home() {
   const scrollToSection = (sectionId) => {
@@ -41,10 +42,7 @@ function Home() {
       </div>
 
       <div className="home-right">
-        {/* Placeholder for your media content */}
-        <div className="media-placeholder">
-          <p>Media content will be displayed here</p>
-        </div>
+        <CodeShowcase />
       </div>
     </div>
   );

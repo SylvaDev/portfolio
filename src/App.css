@@ -244,8 +244,28 @@ section:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.particle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 10px;  /* Match parent's border radius */
+  overflow: hidden;  /* Ensure particles stay within bounds */
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .media-placeholder {
@@ -357,5 +377,79 @@ section:not(:last-child) {
 
   .home-container {
     flex-direction: column;
+  }
+
+  .home-left {
+    padding-right: 0;
+  }
+
+  .home-right {
+    min-height: 300px;
+    margin-top: 2rem;
+  }
+
+  .code-showcase {
+    height: 300px;
+  }
+}
+
+.code-showcase {
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-header {
+  background-color: #2d2d2d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.control.red { background-color: #ff5f56; }
+.control.yellow { background-color: #ffbd2e; }
+.control.green { background-color: #27c93f; }
+
+.file-name {
+  color: #d4d4d4;
+  font-size: 0.9rem;
+  font-family: 'Consolas', monospace;
+}
+
+.code-content {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.code-content.typing {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

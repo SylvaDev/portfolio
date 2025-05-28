@@ -8,21 +8,27 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Project One",
-      description: "A brief description of the first project and its key features.",
-      thumbnail: "https://via.placeholder.com/400x300",
+      title: "My Demo App",
+      description: "A simple demo application built on React and deployed on Vercel for debugging purposes.",
+      thumbnail: "https://my-demo-ayn9ylgcp-sylvadevs-projects.vercel.app/public/images/my-demo-app.png",
+      liveUrl: "https://my-demo-ayn9ylgcp-sylvadevs-projects.vercel.app/",
+      githubUrl: "https://github.com/SylvaDev/my-demo-app"
     },
     {
       id: 2,
       title: "Project Two",
       description: "Description of the second project highlighting its main functionalities.",
       thumbnail: "https://via.placeholder.com/400x300",
+      liveUrl: "https://project-two-url.com",
+      githubUrl: "https://github.com/yourusername/project-two"
     },
     {
       id: 3,
       title: "Project Three",
       description: "Overview of the third project and its unique aspects.",
       thumbnail: "https://via.placeholder.com/400x300",
+      liveUrl: "https://project-three-url.com",
+      githubUrl: "https://github.com/yourusername/project-three"
     },
   ];
 
@@ -62,6 +68,26 @@ function Projects() {
               <div className="project-card">
                 <div className="project-thumbnail">
                   <img src={project.thumbnail} alt={project.title} />
+                  <div className="project-overlay">
+                    <div className="project-links">
+                      <a 
+                        href={project.liveUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link live-link"
+                      >
+                        Live Demo
+                      </a>
+                      <a 
+                        href={project.githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link github-link"
+                      >
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="project-info">
                   <h2>{project.title}</h2>

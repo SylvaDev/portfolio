@@ -18,14 +18,11 @@
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 10px;
 }
 
 .project-card:hover {
@@ -33,6 +30,7 @@
 }
 
 .project-thumbnail {
+  position: relative;
   width: 100%;
   height: 200px;
   overflow: hidden;
@@ -45,26 +43,69 @@
   transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-thumbnail img {
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-thumbnail:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-thumbnail:hover img {
+  transform: scale(1.1);
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-link {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.live-link {
+  background-color: #00e5ff;
+  color: #000;
+}
+
+.github-link {
+  background-color: #333;
+  color: #fff;
+}
+
+.project-link:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
 
 .project-info {
   padding: 20px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .project-info h2 {
-  font-size: 1.5rem;
+  color: #00e5ff;
   margin-bottom: 10px;
-  color: #00ffff;
+  font-size: 1.5rem;
 }
 
 .project-info p {
-  font-size: 1rem;
-  color: #ccc;
+  color: #e0e0e0;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -86,16 +127,15 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 40px;
-  color: #00ffff;
+  color: #00e5ff;
 }
 
 .slick-dots li button:before {
-  color: #00ffff;
+  color: #00e5ff;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #00ffff;
+  color: #00e5ff;
 }
 
 @media (max-width: 768px) {

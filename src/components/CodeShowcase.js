@@ -75,7 +75,7 @@ const CodeShowcase = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [codeSnippets.length]);
 
   return (
     <div className="code-showcase">

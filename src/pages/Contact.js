@@ -25,10 +25,10 @@ function Contact() {
 
     try {
       await emailjs.sendForm(
-        'service_pnfbt4n', // Replace with your EmailJS service ID
-        'template_npj14ol', // Replace with your EmailJS template ID
+        'service_pnfbt4n', 
+        'template_npj14ol', 
         formRef.current,
-        '3vg4b9TEh3-vadqSg' // Replace with your EmailJS public key
+        '3vg4b9TEh3-vadqSg' 
       );
       setSuccess(true);
       setForm({

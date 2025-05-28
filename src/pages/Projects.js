@@ -24,7 +24,6 @@ function Projects() {
       description: "Overview of the third project and its unique aspects.",
       thumbnail: "https://via.placeholder.com/400x300",
     },
-    // Add more projects as needed
   ];
 
   const settings = {

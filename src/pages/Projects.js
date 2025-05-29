@@ -12,7 +12,7 @@ function Projects() {
     {
       id: 1,
       title: "Star Wars Components API",
-      description: "A simple react application that fetches data from the Star Wars API and displays it in a list of cards created during coursework with Bloom Institute of Technology",
+      description: "A simple react application that fetches data from the Star Wars API and displays it in a list of cards. Created during coursework with Bloom Institute of Technology",
       thumbnail: "https://api.microlink.io/?url=https://star-wars-component-list.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
       liveUrl: "https://star-wars-component-list.vercel.app/",
       githubUrl: "https://github.com/SylvaDev/star_wars_component_list"
@@ -27,11 +27,11 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Project Three",
-      description: "Overview of the third project and its unique aspects.",
+      title: "Coming Soon",
+      description: "Working diligently on this project. Check out Github in the meantime.",
       thumbnail: "https://via.placeholder.com/400x300",
       liveUrl: "https://project-three-url.com",
-      githubUrl: "https://github.com/yourusername/project-three"
+      githubUrl: "https://github.com/SylvaDev"
     },
   ];
 

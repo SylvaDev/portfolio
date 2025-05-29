@@ -1,0 +1,50 @@
+.nav-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buy-me-coffee-container {
+  display: flex;
+  align-items: center;
+  transform: scale(0.8);
+  transform-origin: left center;
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bmc-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: #5F7FFF;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Cookie', cursive;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+}
+
+.bmc-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bmc-button img {
+  height: 20px;
+  width: auto;
+}
+
+.bmc-button span {
+  font-size: 1.1em;
+}
+
+/* Adjust the Buy Me a Coffee button size if needed */
+.buy-me-coffee-container iframe {
+  transform: scale(0.8);
+  transform-origin: left center;
+} 

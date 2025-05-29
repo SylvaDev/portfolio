@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/Projects.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Projects() {
   const projects = [
@@ -76,7 +79,8 @@ function Projects() {
                         rel="noopener noreferrer"
                         className="project-link live-link"
                       >
-                        Live Demo
+                        <FontAwesomeIcon icon={faExternalLinkAlt} className="preview-icon" />
+                        <span>Live Demo</span>
                       </a>
                       <a 
                         href={project.githubUrl} 
@@ -84,7 +88,8 @@ function Projects() {
                         rel="noopener noreferrer"
                         className="project-link github-link"
                       >
-                        GitHub
+                        <FontAwesomeIcon icon={faGithub} className="preview-icon" />
+                        <span>GitHub</span>
                       </a>
                     </div>
                   </div>

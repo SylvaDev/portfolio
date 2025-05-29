@@ -53,9 +53,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(26, 26, 26, 0.9);
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,30 +73,44 @@
 
 .project-links {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 
 .project-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 4px;
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.3s ease;
 }
 
+.project-link:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+}
+
+.preview-icon {
+  font-size: 1.2em;
+}
+
 .live-link {
-  background-color: #00e5ff;
-  color: #000;
+  background-color: rgba(46, 204, 113, 0.8);
+}
+
+.live-link:hover {
+  background-color: rgba(46, 204, 113, 1);
 }
 
 .github-link {
-  background-color: #333;
-  color: #fff;
+  background-color: rgba(52, 73, 94, 0.8);
 }
 
-.project-link:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+.github-link:hover {
+  background-color: rgba(52, 73, 94, 1);
 }
 
 .project-info {

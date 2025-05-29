@@ -29,7 +29,7 @@ function About() {
           <h2>Who am I?</h2>
           <div className="about-content">
             <p>
-              Hi, I's Irving Sylva, a Full-Stack Web Developer with a passion for building websites that are both fun and intuitive for users.
+              Hi, I'm Irving Sylva, a Full-Stack Web Developer with a passion for building websites that are both fun and intuitive for users.
               I specialize in React, Node.js, Javascript, and working with APIs to bring ideas to life on the web.<br/>
               Born and raised in Southern California, I made a big leap from managing maintenance and front desk operations to coding full-time - driven by a love for problem-solving and creativity.
               As a dedicated husband and proud father of four amazing daughters, I understand the importance of building things that truly work for people.<br/>

@@ -8,11 +8,11 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "My Demo App",
-      description: "A simple demo application built on React and deployed on Vercel for debugging purposes.",
-      thumbnail: "https://my-demo-ayn9ylgcp-sylvadevs-projects.vercel.app/public/images/my-demo-app.png",
-      liveUrl: "https://my-demo-ayn9ylgcp-sylvadevs-projects.vercel.app/",
-      githubUrl: "https://github.com/SylvaDev/my-demo-app"
+      title: "Star Wars Components API",
+      description: "A simple react application that fetches data from the Star Wars API and displays it in a list of cards created during coursework with Bloom Institute of Technology.",
+      thumbnail: "https://api.microlink.io/?url=https://star-wars-component-list.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
+      liveUrl: "https://star-wars-component-list.vercel.app/",
+      githubUrl: "https://github.com/SylvaDev/star_wars_component_list"
     },
     {
       id: 2,

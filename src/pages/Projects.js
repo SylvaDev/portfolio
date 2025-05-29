@@ -12,18 +12,18 @@ function Projects() {
     {
       id: 1,
       title: "Star Wars Components API",
-      description: "A simple react application that fetches data from the Star Wars API and displays it in a list of cards created during coursework with Bloom Institute of Technology.",
+      description: "A simple react application that fetches data from the Star Wars API and displays it in a list of cards created during coursework with Bloom Institute of Technology",
       thumbnail: "https://api.microlink.io/?url=https://star-wars-component-list.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
       liveUrl: "https://star-wars-component-list.vercel.app/",
       githubUrl: "https://github.com/SylvaDev/star_wars_component_list"
     },
     {
       id: 2,
-      title: "Project Two",
-      description: "Description of the second project highlighting its main functionalities.",
-      thumbnail: "https://via.placeholder.com/400x300",
-      liveUrl: "https://project-two-url.com",
-      githubUrl: "https://github.com/yourusername/project-two"
+      title: "Exovara Labs",
+      description: "React and Vercel based Website for a startup company that develops video games. Built with Discord API integration for image carousel (WIP)",
+      thumbnail: "https://api.microlink.io/?url=https://exovara-labs.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
+      liveUrl: "https://exovara-labs.vercel.app/",
+      githubUrl: "https://github.com/SylvaDev/exovara_labs"
     },
     {
       id: 3,

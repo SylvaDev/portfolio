@@ -7,16 +7,16 @@ function Achievements() {
   const achievements = [
     {
       id: 1,
-      category: 'education',
-      date: '2023',
-      title: 'BloomTech Full Stack Web Development',
-      description: 'Completed intensive full-stack web development bootcamp, mastering React, Node.js, and modern web technologies.',
+      category: 'career',
+      date: '2025',
+      title: 'Freelance Project Management',
+      description: 'Started a Discord server where I help teach visual scripting and game development on Unreal Engine 5 to beginners.',
       icon: '🎓'
     },
     {
       id: 2,
       category: 'project',
-      date: '2023',
+      date: '2025',
       title: 'Portfolio Website',
       description: 'Designed and developed a responsive portfolio website showcasing my projects and skills.',
       icon: '💻'
@@ -24,17 +24,17 @@ function Achievements() {
     {
       id: 3,
       category: 'career',
-      date: '2023',
+      date: '2024',
       title: 'Career Transition',
       description: 'Successfully transitioned from maintenance management to software development.',
       icon: '🚀'
     },
     {
       id: 4,
-      category: 'project',
-      date: '2023',
-      title: 'Demo App Development',
-      description: 'Created and deployed a demo application using React and Vercel.',
+      category: 'education',
+      date: '2024',
+      title: 'Passed the General Coding Assessment',
+      description: 'Passed the General Coding Assessment on my second attempt',
       icon: '⚡'
     },
     {

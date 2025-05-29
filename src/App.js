@@ -9,10 +9,12 @@ import Achievements from './pages/Achievements';
 import Contact from './pages/Contact';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import MatrixBackground from './components/MatrixBackground';
 
 function App() {
   return (
     <div className="App">
+      <MatrixBackground />
       <Navigation />
       <main>
         <section id="home">

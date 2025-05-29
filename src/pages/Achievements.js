@@ -7,14 +7,6 @@ function Achievements() {
   const achievements = [
     {
       id: 1,
-      category: 'career',
-      date: '2025',
-      title: 'Freelance Project Management',
-      description: 'Started a Discord server where I help teach visual scripting and game development on Unreal Engine 5 to beginners.',
-      icon: '🎓'
-    },
-    {
-      id: 2,
       category: 'project',
       date: '2025',
       title: 'Portfolio Website',
@@ -22,7 +14,23 @@ function Achievements() {
       icon: '💻'
     },
     {
+      id: 2,
+      category: 'career',
+      date: '2024',
+      title: 'Freelance Project Management',
+      description: 'Started a Discord server where I help teach visual scripting and game development on Unreal Engine 5 to beginners.',
+      icon: '🎓'
+    },
+    {
       id: 3,
+      category: 'career',
+      date: '2024',
+      title: 'Freelance Web Development',
+      description: 'Working with private clients to develop their websites and web applications using React, Node.js, and MongoDB.',
+      icon: '🎓'
+    },
+    {
+      id: 4,
       category: 'career',
       date: '2024',
       title: 'Career Transition',
@@ -30,7 +38,7 @@ function Achievements() {
       icon: '🚀'
     },
     {
-      id: 4,
+      id: 5,
       category: 'education',
       date: '2024',
       title: 'Passed the General Coding Assessment',
@@ -38,7 +46,7 @@ function Achievements() {
       icon: '⚡'
     },
     {
-      id: 5,
+      id: 6,
       category: 'education',
       date: '2023',
       title: 'GitHub Mastery',

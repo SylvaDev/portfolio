@@ -22,7 +22,7 @@ function Home() {
           </p>
           
           <p className="description">
-            I bring a unique perspective to software development through my passion for learning and building.
+            <strong>I bring a unique perspective to software development through my passion for learning and building.</strong>
           </p>
         </div>
 

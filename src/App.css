@@ -136,6 +136,11 @@ section {
   scroll-margin-top: 60px; /* This ensures the section title aligns with the top of the viewport */
 }
 
+/* Add specific height for home section */
+section#home {
+  min-height: 180vh;
+}
+
 section h1 {
   margin-top: 0;
   padding-top: 1rem;
@@ -165,11 +170,12 @@ section:not(:last-child) {
 .home-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 75vh;
 }
 
 .home-left {

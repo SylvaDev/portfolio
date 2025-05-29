@@ -17,7 +17,8 @@ function Home() {
         
         <div className="home-content">
           <p className="origin">
-            Born in 1991 in Fountain Valley, California
+            <strong>Born in 1991</strong><br />
+            <strong>in Fountain Valley, CA</strong>
           </p>
           
           <p className="description">

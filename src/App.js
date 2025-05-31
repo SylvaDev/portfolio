@@ -23,26 +23,26 @@ import MatrixBackground from './components/MatrixBackground';
 function App() {
   return (
     <div className="App">
-      <MatrixBackground />
+      <MatrixBackground data-testid="matrix-background" />
       <Navigation />
       <main>
-        <section id="home">
+        <section id="home" data-testid="home-section">
           <Home />
         </section>
-        <section id="about">
+        <section id="about" data-testid="about-section">
           <About />
         </section>
-        <section id="projects">
+        <section id="projects" data-testid="projects-section">
           <Projects />
         </section>
-        <section id="achievements">
+        <section id="achievements" data-testid="achievements-section">
           <Achievements />
         </section>
-        <section id="contact">
+        <section id="contact" data-testid="contact-section">
           <Contact />
         </section>
       </main>
-      <Footer />
+      <Footer data-testid="footer" />
     </div>
   );
 }

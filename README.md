@@ -38,7 +38,7 @@ A modern, interactive portfolio website built with React to showcase my projects
 
 1. Clone the repository
 ```bash
-git clone [URL]
+git clone [https://github.com/SylvaDev/portfolio]
 ```
 
 2. Install dependencies

@@ -27,11 +27,11 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Coming Soon",
-      description: "Working diligently on this project. Check out Github in the meantime.",
-      thumbnail: "https://via.placeholder.com/400x300",
+      title: "E-commerce Store",
+      description: "Working diligently on this project. Check out Github to track my progress.",
+      thumbnail: "https://placehold.co/600x400/black/cyan?font=playfair-display&text=Coming+Soon",
       liveUrl: "https://project-three-url.com",
-      githubUrl: "https://github.com/SylvaDev"
+      githubUrl: "https://github.com/SylvaDev/ecommerce_platform"
     },
   ];
 

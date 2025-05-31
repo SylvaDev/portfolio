@@ -1,3 +1,4 @@
+/* Base Styles */
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -7,14 +8,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(102, 176, 199, 0.8)); 
-  /*background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
-  /* background-color: #f0f0f0;  (solid color)
-     background-image: url('path-to-your-image.jpg');  (image)
-     background: linear-gradient(to right, #ff0000, #00ff00);  (different gradient)
-  */
   color: white;
 }
 
+/* Layout */
 .App {
   text-align: center;
 }
@@ -54,6 +51,7 @@ body {
   }
 }
 
+/* Navigation */
 .navigation {
   position: fixed;
   top: 0;
@@ -103,6 +101,122 @@ body {
 
 .navigation button:hover {
   color: #00e5ff;
+}
+
+/* Home Section */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
+.home-left {
+  flex: 1;
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.home-left h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00e5ff;
+}
+
+.home-left h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.home-content {
+  margin-bottom: 2rem;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.home-buttons button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.projects-btn {
+  background-color: #00e5ff;
+  color: #000;
+}
+
+.projects-btn:hover {
+  background-color: #00b8cc;
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 2px solid #00e5ff !important;
+  color: #00e5ff;
+}
+
+.contact-btn:hover {
+  background-color: #00e5ff;
+  color: #000;
+}
+
+.home-right {
+  flex: 1;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-placeholder {
+  text-align: center;
+  color: #e0e0e0;
+  padding: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(114, 153, 179, 0.9);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -189,7 +303,7 @@ body {
 }
 
 main {
-  padding-top: 60px; /* Add space for fixed navigation */
+  padding-top: 60px; /* Space for fixed navigation */
 }
 
 section {
@@ -199,10 +313,9 @@ section {
   flex-direction: column;
   align-items: center;
   position: relative;
-  scroll-margin-top: 60px; /* This ensures the section title aligns with the top of the viewport */
+  scroll-margin-top: 60px; /* Ensures section title aligns with viewport top */
 }
 
-/* Add specific height for home section */
 section#home {
   min-height: 100vh;
   padding-bottom: 0;
@@ -213,118 +326,8 @@ section h1 {
   padding-top: 1rem;
 }
 
-/* Add some spacing between sections */
 section:not(:last-child) {
   margin-bottom: 2rem;
-}
-
-.footer {
-  background-color: rgba(114, 153, 179, 0.9);
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  bottom: 0;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-/* Home Section Styles */
-.home-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  min-height: 90vh;
-}
-
-.home-left {
-  flex: 1;
-  text-align: left;
-  padding-right: 2rem;
-}
-
-.home-left h1,
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #00e5ff;  /* Bright cyan color */
-  text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);  /* Subtle glow effect */
-}
-
-.home-left h2,
-.about-left h2,
-.skills-container h2 {
-  font-size: 1.8rem;
-  color: #4de6ff;  /* Slightly softer cyan for subheadings */
-  margin-bottom: 1.5rem;
-}
-
-.home-content {
-  margin-bottom: 2rem;
-}
-
-.home-content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-}
-
-.home-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.home-buttons button {
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.projects-btn {
-  background-color: #007bff;
-  color: white;
-}
-
-.projects-btn:hover {
-  background-color: #0056b3;
-}
-
-.contact-btn {
-  background-color: #28a745;
-  color: white;
-}
-
-.contact-btn:hover {
-  background-color: #218838;
-}
-
-.home-right {
-  flex: 1;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.media-placeholder {
-  text-align: center;
-  color: #e0e0e0;
-  padding: 2rem;
 }
 
 /* About Section Styles */
@@ -404,16 +407,6 @@ section:not(:last-child) {
   color: #e0e0e0;
   font-size: 0.9rem;
   line-height: 1.5;
-}
-
-@media (max-width: 1024px) {
-  .about-container {
-    flex-direction: column;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .code-showcase {

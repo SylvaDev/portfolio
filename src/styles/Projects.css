@@ -1,3 +1,4 @@
+/* Projects Section Container */
 .projects-section {
   min-height: 70vh;
   padding: 40px 20px;
@@ -17,6 +18,7 @@
   min-height: 400px;
 }
 
+/* Project Card Styles */
 .project-slide {
   padding: 10px;
   height: 100%;
@@ -35,6 +37,7 @@
   transform: translateY(-5px);
 }
 
+/* Project Thumbnail and Overlay */
 .project-thumbnail {
   position: relative;
   width: 100%;
@@ -71,6 +74,7 @@
   transform: scale(1.1);
 }
 
+/* Project Links */
 .project-links {
   display: flex;
   gap: 16px;
@@ -97,6 +101,7 @@
   font-size: 1.2em;
 }
 
+/* Live Demo Link */
 .live-link {
   background-color: rgba(46, 204, 113, 0.8);
 }
@@ -105,6 +110,7 @@
   background-color: rgba(46, 204, 113, 1);
 }
 
+/* GitHub Link */
 .github-link {
   background-color: rgba(52, 73, 94, 0.8);
 }
@@ -113,6 +119,7 @@
   background-color: rgba(52, 73, 94, 1);
 }
 
+/* Project Information */
 .project-info {
   padding: 20px;
 }
@@ -129,7 +136,7 @@
   line-height: 1.5;
 }
 
-/* Custom Slick Carousel Styles */
+/* Slick Carousel Customization */
 .slick-prev,
 .slick-next {
   z-index: 1;
@@ -158,6 +165,7 @@
   color: #00e5ff;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .projects-section {
     padding: 20px 10px;

@@ -1,13 +1,20 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import '../styles/Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
+// Import styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import '../styles/Projects.css';
+
+/**
+ * Projects Component
+ * Displays a carousel of my portfolio projects with links to live demos and GitHub repositories
+ */
 function Projects() {
+  // Project data - Each project represents a significant piece of work in my portfolio
   const projects = [
     {
       id: 1,
@@ -35,6 +42,7 @@ function Projects() {
     },
   ];
 
+  // Slider configuration for responsive project carousel
   const settings = {
     dots: true,
     infinite: true,
@@ -78,6 +86,7 @@ function Projects() {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="project-link live-link"
+                        aria-label={`View live demo of ${project.title}`}
                       >
                         <FontAwesomeIcon icon={faExternalLinkAlt} className="preview-icon" />
                         <span>Live Demo</span>
@@ -87,6 +96,7 @@ function Projects() {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="project-link github-link"
+                        aria-label={`View GitHub repository of ${project.title}`}
                       >
                         <FontAwesomeIcon icon={faGithub} className="preview-icon" />
                         <span>GitHub</span>

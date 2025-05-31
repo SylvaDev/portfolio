@@ -1,9 +1,11 @@
+/* Navigation Title */
 .nav-title {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
+/* Buy Me a Coffee Container */
 .buy-me-coffee-container {
   display: flex;
   align-items: center;
@@ -14,6 +16,7 @@
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Buy Me a Coffee Button */
 .bmc-button {
   display: flex;
   align-items: center;
@@ -43,7 +46,7 @@
   font-size: 1.1em;
 }
 
-/* Adjust the Buy Me a Coffee button size if needed */
+/* Buy Me a Coffee iframe */
 .buy-me-coffee-container iframe {
   transform: scale(0.8);
   transform-origin: left center;
